@@ -1,0 +1,10 @@
+PODS:
+  - glm (0.9.4.6)
+
+DEPENDENCIES:
+  - glm
+
+SPEC CHECKSUMS:
+  glm: e22c8d9df10404059b19c2952f9fa44d9a9f3056
+
+COCOAPODS: 0.39.0

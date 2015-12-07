@@ -1,0 +1,445 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B97390E22F3B9631A3A304BC /* libPods-ShaderPlay.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B946428AC7F7EA323C7596D4 /* libPods-ShaderPlay.a */; };
+		FB103B9A1C150EAD0003498A /* modelShader.fs.glsl in Resources */ = {isa = PBXBuildFile; fileRef = FB103B961C150EAD0003498A /* modelShader.fs.glsl */; };
+		FB103B9B1C150EAD0003498A /* modelShader.vs.glsl in Resources */ = {isa = PBXBuildFile; fileRef = FB103B971C150EAD0003498A /* modelShader.vs.glsl */; };
+		FB103B9C1C150EAD0003498A /* default_lines.fs.glsl in Resources */ = {isa = PBXBuildFile; fileRef = FB103B981C150EAD0003498A /* default_lines.fs.glsl */; };
+		FB103B9D1C150EAD0003498A /* default_lines.vs.glsl in Resources */ = {isa = PBXBuildFile; fileRef = FB103B991C150EAD0003498A /* default_lines.vs.glsl */; };
+		FB49F3A81C14DB2700F1BC44 /* BlenderModelLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FB49F3A61C14DB2700F1BC44 /* BlenderModelLoader.cpp */; };
+		FB91D06F1C11A017005F12CE /* ModelViewerView.mm in Sources */ = {isa = PBXBuildFile; fileRef = FB91D06E1C11A017005F12CE /* ModelViewerView.mm */; };
+		FB91D0711C11A072005F12CE /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB91D0701C11A072005F12CE /* OpenGL.framework */; };
+		FBCA7F771C0F7CBD00352704 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FBCA7F761C0F7CBD00352704 /* AppDelegate.m */; };
+		FBCA7F7A1C0F7CBD00352704 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FBCA7F791C0F7CBD00352704 /* main.m */; };
+		FBCA7F7D1C0F7CBD00352704 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = FBCA7F7C1C0F7CBD00352704 /* ViewController.mm */; };
+		FBCA7F801C0F7CBD00352704 /* ShaderPlay.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FBCA7F7E1C0F7CBD00352704 /* ShaderPlay.xcdatamodeld */; };
+		FBCA7F821C0F7CBD00352704 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBCA7F811C0F7CBD00352704 /* Assets.xcassets */; };
+		FBCA7F851C0F7CBD00352704 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBCA7F831C0F7CBD00352704 /* Main.storyboard */; };
+		FBFE2D4D1C128558000A2478 /* OpenGLHelpers.mm in Sources */ = {isa = PBXBuildFile; fileRef = FBFE2D4C1C128558000A2478 /* OpenGLHelpers.mm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		775427014E3C818924EE68C2 /* Pods-ShaderPlay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShaderPlay.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ShaderPlay/Pods-ShaderPlay.debug.xcconfig"; sourceTree = "<group>"; };
+		A751A42B7CE15E787A8759A8 /* Pods-ShaderPlay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShaderPlay.release.xcconfig"; path = "Pods/Target Support Files/Pods-ShaderPlay/Pods-ShaderPlay.release.xcconfig"; sourceTree = "<group>"; };
+		B946428AC7F7EA323C7596D4 /* libPods-ShaderPlay.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ShaderPlay.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB103B961C150EAD0003498A /* modelShader.fs.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = modelShader.fs.glsl; path = shaders/modelShader.fs.glsl; sourceTree = "<group>"; };
+		FB103B971C150EAD0003498A /* modelShader.vs.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = modelShader.vs.glsl; path = shaders/modelShader.vs.glsl; sourceTree = "<group>"; };
+		FB103B981C150EAD0003498A /* default_lines.fs.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = default_lines.fs.glsl; path = shaders/default_lines.fs.glsl; sourceTree = "<group>"; };
+		FB103B991C150EAD0003498A /* default_lines.vs.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = default_lines.vs.glsl; path = shaders/default_lines.vs.glsl; sourceTree = "<group>"; };
+		FB49F3A61C14DB2700F1BC44 /* BlenderModelLoader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BlenderModelLoader.cpp; sourceTree = "<group>"; };
+		FB49F3A71C14DB2700F1BC44 /* BlenderModelLoader.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = BlenderModelLoader.hpp; sourceTree = "<group>"; };
+		FB91D06D1C11A017005F12CE /* ModelViewerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModelViewerView.h; sourceTree = "<group>"; };
+		FB91D06E1C11A017005F12CE /* ModelViewerView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ModelViewerView.mm; sourceTree = "<group>"; };
+		FB91D0701C11A072005F12CE /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		FBCA7F721C0F7CBD00352704 /* ShaderPlay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShaderPlay.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBCA7F751C0F7CBD00352704 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FBCA7F761C0F7CBD00352704 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FBCA7F791C0F7CBD00352704 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FBCA7F7B1C0F7CBD00352704 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		FBCA7F7C1C0F7CBD00352704 /* ViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
+		FBCA7F7F1C0F7CBD00352704 /* ShaderPlay.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ShaderPlay.xcdatamodel; sourceTree = "<group>"; };
+		FBCA7F811C0F7CBD00352704 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FBCA7F841C0F7CBD00352704 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FBCA7F861C0F7CBD00352704 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBFE2D4B1C128558000A2478 /* OpenGLHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenGLHelpers.h; sourceTree = "<group>"; };
+		FBFE2D4C1C128558000A2478 /* OpenGLHelpers.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = OpenGLHelpers.mm; sourceTree = "<group>"; };
+		FBFE2D4F1C129E1C000A2478 /* ModelViewerParentProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModelViewerParentProtocol.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FBCA7F6F1C0F7CBD00352704 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B97390E22F3B9631A3A304BC /* libPods-ShaderPlay.a in Frameworks */,
+				FB91D0711C11A072005F12CE /* OpenGL.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8AD88648AB1091D14B005984 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				775427014E3C818924EE68C2 /* Pods-ShaderPlay.debug.xcconfig */,
+				A751A42B7CE15E787A8759A8 /* Pods-ShaderPlay.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A71BC5B434800527048E3DA6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B946428AC7F7EA323C7596D4 /* libPods-ShaderPlay.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FBCA7F691C0F7CBD00352704 = {
+			isa = PBXGroup;
+			children = (
+				FB91D0701C11A072005F12CE /* OpenGL.framework */,
+				FBCA7F741C0F7CBD00352704 /* ShaderPlay */,
+				FBCA7F731C0F7CBD00352704 /* Products */,
+				8AD88648AB1091D14B005984 /* Pods */,
+				A71BC5B434800527048E3DA6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FBCA7F731C0F7CBD00352704 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FBCA7F721C0F7CBD00352704 /* ShaderPlay.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FBCA7F741C0F7CBD00352704 /* ShaderPlay */ = {
+			isa = PBXGroup;
+			children = (
+				FBFE2D4E1C129DDC000A2478 /* protocol */,
+				FBFE2D461C1284AA000A2478 /* shaders */,
+				FB91D06D1C11A017005F12CE /* ModelViewerView.h */,
+				FB91D06E1C11A017005F12CE /* ModelViewerView.mm */,
+				FBCA7F7B1C0F7CBD00352704 /* ViewController.h */,
+				FBCA7F7C1C0F7CBD00352704 /* ViewController.mm */,
+				FBFE2D4B1C128558000A2478 /* OpenGLHelpers.h */,
+				FBFE2D4C1C128558000A2478 /* OpenGLHelpers.mm */,
+				FB49F3A61C14DB2700F1BC44 /* BlenderModelLoader.cpp */,
+				FB49F3A71C14DB2700F1BC44 /* BlenderModelLoader.hpp */,
+				FBCA7F831C0F7CBD00352704 /* Main.storyboard */,
+				FBCA7F811C0F7CBD00352704 /* Assets.xcassets */,
+				FBCA7F861C0F7CBD00352704 /* Info.plist */,
+				FBCA7F7E1C0F7CBD00352704 /* ShaderPlay.xcdatamodeld */,
+				FBCA7F781C0F7CBD00352704 /* Supporting Files */,
+			);
+			path = ShaderPlay;
+			sourceTree = "<group>";
+		};
+		FBCA7F781C0F7CBD00352704 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FBCA7F751C0F7CBD00352704 /* AppDelegate.h */,
+				FBCA7F761C0F7CBD00352704 /* AppDelegate.m */,
+				FBCA7F791C0F7CBD00352704 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FBFE2D461C1284AA000A2478 /* shaders */ = {
+			isa = PBXGroup;
+			children = (
+				FB103B961C150EAD0003498A /* modelShader.fs.glsl */,
+				FB103B971C150EAD0003498A /* modelShader.vs.glsl */,
+				FB103B981C150EAD0003498A /* default_lines.fs.glsl */,
+				FB103B991C150EAD0003498A /* default_lines.vs.glsl */,
+			);
+			name = shaders;
+			sourceTree = "<group>";
+		};
+		FBFE2D4E1C129DDC000A2478 /* protocol */ = {
+			isa = PBXGroup;
+			children = (
+				FBFE2D4F1C129E1C000A2478 /* ModelViewerParentProtocol.h */,
+			);
+			name = protocol;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FBCA7F711C0F7CBD00352704 /* ShaderPlay */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBCA7F891C0F7CBD00352704 /* Build configuration list for PBXNativeTarget "ShaderPlay" */;
+			buildPhases = (
+				FE3E725F7859B5AA9D37151A /* Check Pods Manifest.lock */,
+				FBCA7F6E1C0F7CBD00352704 /* Sources */,
+				FBCA7F6F1C0F7CBD00352704 /* Frameworks */,
+				FBCA7F701C0F7CBD00352704 /* Resources */,
+				A5816CEBBAE1FC9E38D98845 /* Embed Pods Frameworks */,
+				3DD180644240DA23E81FEF15 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ShaderPlay;
+			productName = ShaderPlay;
+			productReference = FBCA7F721C0F7CBD00352704 /* ShaderPlay.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FBCA7F6A1C0F7CBD00352704 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = DentVentures;
+				TargetAttributes = {
+					FBCA7F711C0F7CBD00352704 = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+				};
+			};
+			buildConfigurationList = FBCA7F6D1C0F7CBD00352704 /* Build configuration list for PBXProject "ShaderPlay" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FBCA7F691C0F7CBD00352704;
+			productRefGroup = FBCA7F731C0F7CBD00352704 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FBCA7F711C0F7CBD00352704 /* ShaderPlay */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FBCA7F701C0F7CBD00352704 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB103B9C1C150EAD0003498A /* default_lines.fs.glsl in Resources */,
+				FBCA7F821C0F7CBD00352704 /* Assets.xcassets in Resources */,
+				FB103B9A1C150EAD0003498A /* modelShader.fs.glsl in Resources */,
+				FB103B9B1C150EAD0003498A /* modelShader.vs.glsl in Resources */,
+				FBCA7F851C0F7CBD00352704 /* Main.storyboard in Resources */,
+				FB103B9D1C150EAD0003498A /* default_lines.vs.glsl in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3DD180644240DA23E81FEF15 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ShaderPlay/Pods-ShaderPlay-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A5816CEBBAE1FC9E38D98845 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ShaderPlay/Pods-ShaderPlay-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FE3E725F7859B5AA9D37151A /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FBCA7F6E1C0F7CBD00352704 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBCA7F801C0F7CBD00352704 /* ShaderPlay.xcdatamodeld in Sources */,
+				FB91D06F1C11A017005F12CE /* ModelViewerView.mm in Sources */,
+				FBCA7F7D1C0F7CBD00352704 /* ViewController.mm in Sources */,
+				FBCA7F7A1C0F7CBD00352704 /* main.m in Sources */,
+				FBFE2D4D1C128558000A2478 /* OpenGLHelpers.mm in Sources */,
+				FBCA7F771C0F7CBD00352704 /* AppDelegate.m in Sources */,
+				FB49F3A81C14DB2700F1BC44 /* BlenderModelLoader.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FBCA7F831C0F7CBD00352704 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FBCA7F841C0F7CBD00352704 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FBCA7F871C0F7CBD00352704 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		FBCA7F881C0F7CBD00352704 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		FBCA7F8A1C0F7CBD00352704 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 775427014E3C818924EE68C2 /* Pods-ShaderPlay.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = ShaderPlay/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = DV.ShaderPlay;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FBCA7F8B1C0F7CBD00352704 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A751A42B7CE15E787A8759A8 /* Pods-ShaderPlay.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = ShaderPlay/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = DV.ShaderPlay;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FBCA7F6D1C0F7CBD00352704 /* Build configuration list for PBXProject "ShaderPlay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBCA7F871C0F7CBD00352704 /* Debug */,
+				FBCA7F881C0F7CBD00352704 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBCA7F891C0F7CBD00352704 /* Build configuration list for PBXNativeTarget "ShaderPlay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBCA7F8A1C0F7CBD00352704 /* Debug */,
+				FBCA7F8B1C0F7CBD00352704 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FBCA7F7E1C0F7CBD00352704 /* ShaderPlay.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FBCA7F7F1C0F7CBD00352704 /* ShaderPlay.xcdatamodel */,
+			);
+			currentVersion = FBCA7F7F1C0F7CBD00352704 /* ShaderPlay.xcdatamodel */;
+			path = ShaderPlay.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = FBCA7F6A1C0F7CBD00352704 /* Project object */;
+}
